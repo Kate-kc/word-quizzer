@@ -1,0 +1,30 @@
+:root {
+    --root-text-color: black;
+    --root-background-color: rgb(250, 250, 250);
+    --root-font-weight: 400px;
+
+    --button-height: 36px;
+    --button-radius: 18px;
+    --button-radius-sharp: 5px;
+    --button-color: rgb(0, 0, 0);
+    --button-border-color: transparent;
+    --button-background-color: rgb(235, 235, 235);
+    --button-hover-background-color: rgb(220, 220, 220);
+    --button-font-size: 14px;
+
+    --input-height: 36px;
+    --input-border-radius: 5px;
+    --input-font-size: 16px;
+    --input-color: rgb(0, 0, 0);
+    --input-border-default: 1px solid rgb(145,145,145);
+    --input-background-color: rgb(250, 250, 250);
+    --input-focus-box-shadow-default: 0 0 4px rgb(200, 200, 200);
+    --button-font-size: 14px;
+
+    --divider-color: rgb(145, 145, 145);
+
+    --container-background-color: white;
+    --container-padding: 10px;
+    --container-border-radius: 15px;
+    --container-border-default: 1px solid rgb(235, 235, 235);
+}

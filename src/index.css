@@ -1,0 +1,227 @@
+@import "./assets/styles/variables.css";
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: var(--root-font-weight);
+
+  color-scheme: light dark;
+  color: var(--root-text-color);
+  background-color: var(--root-background-color);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 1.1;
+}
+
+.margin-top-10 {
+  margin-top: 10px;
+}
+
+button {
+  height: var(--button-height);
+  border-radius: var(--button-radius);
+  border-color: var(--button-border-color);
+  font-size: var(--button-font-size);
+  font-weight: 500;
+  font-family: inherit;
+  color: var(--button-color);
+  background-color: var(--button-background-color);
+  cursor: pointer;
+  transition: border-color 0.25s;
+  padding: 0px 20px;
+}
+button:hover {
+  background-color: var(--button-hover-background-color)
+}
+button:focus,
+button:focus-visible {
+  outline: none;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+input {
+  height: var(--input-height);
+  border-radius: var(--input-border-radius);
+  font-family: inherit;
+  cursor: pointer;
+  transition: border-color 0.25s;
+
+  padding: 8px;
+  box-sizing: border-box;
+  background-color: var(--input-background-color);
+  border: var(--input-border-default);
+  color: var(--input-color);
+  font-size: var(--input-font-size);
+}
+
+input:focus {
+  outline: none;
+  box-shadow: var(--input-focus-box-shadow-default);
+}
+
+.container {
+  padding: 1.5rem;        
+  max-width: 896px;      
+  margin: 50px auto 0; 
+}
+
+.container h1 {
+  font-size: 1.5rem; 
+  font-weight: bold; 
+  margin-bottom: 1rem; 
+}
+
+.divider {
+  width: 1px;
+  height: 24px;
+  background: var(--divider-color);
+} 
+
+.file-upload {
+  margin-bottom: 1rem;  
+}
+
+.file-upload span {
+  margin-left: 0.5rem; 
+}
+
+.quiz-mode-container {
+  background-color: var(--container-background-color);
+  padding: var(--container-padding);
+  border-radius: var(--container-border-radius);
+  border: var(--container-border-default);
+}
+
+ .mode-buttons {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.mode-buttons .mode-btn {
+  transition: background 0.2s;
+}
+
+.mode-btn:first-child {
+  border-top-left-radius: var(--button-radius);
+  border-bottom-left-radius: var(--button-radius);
+  border-top-right-radius: var(--button-radius-sharp);
+  border-bottom-right-radius: var(--button-radius-sharp);
+}
+
+.mode-btn:not(:first-child):not(:last-child) {
+  border-radius: var(--button-radius-sharp);
+}
+
+.mode-btn:last-child {
+  border-top-right-radius: var(--button-radius);
+  border-bottom-right-radius: var(--button-radius);
+  border-top-left-radius: var(--button-radius-sharp);
+  border-bottom-left-radius: var(--button-radius-sharp);
+}
+
+.mode-btn.active {
+  background: rgb(50, 50, 50);
+  color: white;
+}
+
+.max-btn {
+  border-top-left-radius: var(--button-radius-sharp);
+  border-bottom-left-radius: var(--button-radius-sharp);
+}
+
+.number-questions-sec {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.random-order-sec {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+/* Quiz */
+.quiz-table-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 16px;
+  background-color: var(--container-background-color);
+  padding: var(--container-padding);
+  border-radius: var(--container-border-radius);
+  border: var(--container-border-default);
+}
+
+.quiz-table {
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.quiz-table th,
+.quiz-table td {
+  border: 1px solid transparent;
+  padding: 8px;
+  text-align: left;
+}
+
+.quiz-table input {
+  width: 100%;
+  height: var(--input-height);
+  padding: 8px;
+  box-sizing: border-box;
+  border-radius: var(--input-border-radius);
+  background-color: var(--input-background-color);
+  border: var(--input-border-default);
+  color: var(--input-color);
+}
+
+.quiz-table input:focus {
+  box-shadow: var(--input-focus-box-shadow-default);
+}
+
+.quiz-button-group {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
